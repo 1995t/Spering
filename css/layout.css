@@ -103,14 +103,56 @@ div.div2_position
     background-color: #189AB4;
     
 }
-div>div>div.div2_cursor_btn
-{
-    margin-top: 15px;
-    
-}
+
 div.div2_position>img.image1_changes
 {
     margin-top: 20%;
     margin-left: 20%;
     height: 400px;
+}
+
+div>div>div.div2_cursor_btn
+{
+    margin-top: 20px;
+    margin-left: 40px;
+    
+}
+div>div>div.div2_cursor_btn>button
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+div>div>div.div2_cursor_btn>button>span.s-1
+{
+    display: block;
+    width: 34px;
+    height: 4px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+
+}
+div>div>div.div2_cursor_btn>button>span.s-2
+{
+    display: block;
+    margin-top: 7px;
+    margin-left: 17px;
+    width: 17px;
+    height: 4px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+div>div>div.div2_cursor_btn>button>span.s-3
+{
+    display: block;
+    margin-top: 7px;
+    width: 34px;
+    height: 4px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+
 }

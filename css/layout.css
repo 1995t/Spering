@@ -4,21 +4,23 @@ margin: 0%;
 padding: 0%;
 background-color: white;
 }
-div>div>div>nav.nav_position
+div>div>div.nav_division
 {
+    display: flex;
+    flex-direction: row;
     margin-left: 1.5em;
     margin-top: 1em;
+}
+div>div>div>nav.nav_position
+{
+    
 }
 div>div>div.nav_division>nav.nav_position>img.logo_ratio
 {
     height: 40%;
     width: auto;
 }
-div>div>div.nav_division
-{
-    display: flex;
-    flex-direction: row;
-}
+
 div>div>div.nav_division>span.logo_txt_transform
 {
     color: white;
@@ -180,7 +182,7 @@ div>div.carousel_btn_container>a.carousel_btn_previous,div>div.carousel_btn_cont
 div>div.carousel_btn_container>a.carousel_btn_previous:hover,div>div.carousel_btn_container>a.carousel_btn_next:hover
 {
     background-color: red;
-    transition: 0.6ms;
+    transition: 1ms;
 }
 div>div.carousel_btn_container>a.carousel_btn_previous>span.previous,div>div.carousel_btn_container>a.carousel_btn_next>span.next
 {
@@ -200,4 +202,36 @@ div>div.carousel_btn_container>a.carousel_btn_previous>span.previous
 div>div.carousel_btn_container>a.carousel_btn_next>span.next
 {
     background-image: url(../images/next.png);
+}
+div.div_sec3
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.div_sec3>div.sec3_poster
+{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+div.div_sec3>div.sec3_poster>img.sec3_image
+{
+    width: 90%;
+    height: auto;
+}
+div.div_sec3>div.sec3_txt>h2
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+div.div_sec3>div.sec3_txt>div.div_sec3_buttons
+{
+    margin-top: 60px;
+}
+div.div_sec3>div.sec3_txt>div.div_sec3_buttons>input[button].sec3_read_more
+{
+    
 }

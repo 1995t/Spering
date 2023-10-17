@@ -3,16 +3,19 @@ body {
     padding: 0%;
     background-color: white;
 }
-
+div.div_sec1{
+    display: flex;
+}
 div>div>div.nav_division {
     display: flex;
     flex-direction: row;
     margin-left: 1.5em;
     margin-top: 1em;
+    align-items: center;
 }
 
-div>div>div.nav_division>nav.nav_position>img.logo_ratio {
-    height: 40%;
+div>div>div.nav_division>img{
+    height: 40px;
     width: auto;
 }
 
@@ -61,7 +64,9 @@ div>div>div.div_buttons {
     margin-top: 40px;
     margin-left: 20%;
 }
-
+div.div_sec2{
+    display: flex;
+}
 div>div>input[type=button],
 div.div_sec3>div.sec3_txt>div.div_sec3_buttons>input[button] {
     padding: 0.75em;
@@ -298,6 +303,7 @@ div.div_sec4>div>div {
 }
 
 div.div_sec5 {
+    display: flex;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -340,10 +346,14 @@ div.div_sec5>div>input[type=button]:hover {
 }
 
 section>div.div_sec6 {
+    display: flex;
+    flex-direction: row;
     margin-left: 8.3%;
+    justify-content: space-between;
+    align-content: center;
 }
 
-section>div.div_sec6>h2 {
+section>div.div_sec6>div>h2 {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
@@ -351,23 +361,35 @@ section>div.div_sec6>h2 {
     line-height: 1.2;
 
 }
-section.sec6>div>div {
-    display: flex;
+section.sec6>div>div.freelance_img img {
+    width: 50%;
+    height: auto;
+} 
+section.sec6>div>div>div>div img {
     
-    align-items: center;
-}
-section.sec6>div>div>img {
-    margin-left: 20px;
     background-color: #189AB4;
-    border-radius: 30%;
+    border-radius: 10%;
+    
     
 }
-section div div {
-    margin-top: 50px;
-    width: 90px;
-    height: 90px;
+
+section div div div div.img_box{
     background-color: #189AB4;
     border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec6 .div_sec6 div div.sec6_link_box{
+   display: flex;
+   align-items: center;
+}
+.sec6 .div_sec6 div .sec6_link_box .paid_to_freelancers{
+    margin-left: 30px;
 }
 section div div p {
     margin-left: 50%;
@@ -377,13 +399,20 @@ footer {
     margin-top: 60px;
     background-color: #05445E;
 }
-footer div {
-    display: flexbox;
+footer div{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 60px;
-    margin-left: 10%;
+    margin-left: 6%;
 }
-footer div p {
+footer div div p {
     font-size: 20px;
     color: white;
+}
+footer div div.social_media img{
+   padding:5px;
+}
+div.copyright p{
+    text-align: center;
 }
